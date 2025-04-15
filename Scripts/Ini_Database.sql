@@ -1,0 +1,9 @@
+CREATE DATABASE Retailer;
+
+USE Retailer;
+
+CREATE SCHEMA Bronze;
+
+CREATE SCHEMA Silver;
+
+CREATE SCHEMA Gold;
