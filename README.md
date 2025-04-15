@@ -18,46 +18,46 @@ The project will leverage the Medallion Architecture (Bronze, Silver, Gold layer
 
 * Architecture: Implement the Medallion Architecture:
 
-- Bronze Layer – Raw ingested data
+  - Bronze Layer – Raw ingested data
 
-- Silver Layer – Cleaned and transformed data
+  - Silver Layer – Cleaned and transformed data
 
-- Gold Layer – Aggregated tables and business-friendly metrics
+  - Gold Layer – Aggregated tables and business-friendly metrics
 
 - ETL Process:
 
-- Data Cleaning (nulls, duplicates, data types)
+  - Data Cleaning (nulls, duplicates, data types)
 
-- Standardization (e.g., currency conversion)
+  - Standardization (e.g., currency conversion)
 
-- Data Modeling (Star Schema with Fact & Dimension tables)
+  - Data Modeling (Star Schema with Fact & Dimension tables)
 
-- Storage: SQL Server (with use of views, staging, and surrogate keys)
+  - Storage: SQL Server (with use of views, staging, and surrogate keys)
 
-- Documentation: ERD, Data Dictionary, Transformation Logic
+  - Documentation: ERD, Data Dictionary, Transformation Logic
 
 2️⃣ Data Analysis & Business Insights
 📌 Goal: Deliver analytics and dashboards to enable performance tracking and strategic planning.
 
 * Key Areas of Analysis:
 
-- Revenue & Quantity Trends
+  - Revenue & Quantity Trends
 
-- Best/Worst Performing Products
+  - Best/Worst Performing Products
 
-- Sales by Region/Store
+  - Sales by Region/Store
 
-- Customer Segmentation & Loyalty
+  - Customer Segmentation & Loyalty
 
 * KPIs:
 
-- Total Revenue
+  - Total Revenue
 
-- Total Quantity Sold
+  - Total Quantity Sold
 
-- Top 5/Bottom 5 Products
+  - Top 5/Bottom 5 Products
 
-- Sales per Product
+  - Sales per Product
 
 * Tool: Tableau or Power BI (optional), SQL-based reporting
 
