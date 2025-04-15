@@ -12,6 +12,8 @@ The project will leverage the Medallion Architecture (Bronze, Silver, Gold layer
 
 1️⃣ Data Engineering & Warehouse Design
 
+
+
 📌 Goal: Build a structured, high-performance data warehouse to support analytical queries and KPIs.
 
 * Data Sources: Use raw sales and customer data from multiple CSVs (e.g., Products, Sales, Stores, Customers, Exchange_Rates).
