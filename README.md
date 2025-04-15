@@ -39,6 +39,8 @@ The project will leverage the Medallion Architecture (Bronze, Silver, Gold layer
   - Documentation: ERD, Data Dictionary, Transformation Logic
 
 2️⃣ Data Analysis & Business Insights
+
+
 📌 Goal: Deliver analytics and dashboards to enable performance tracking and strategic planning.
 
 * Key Areas of Analysis:
