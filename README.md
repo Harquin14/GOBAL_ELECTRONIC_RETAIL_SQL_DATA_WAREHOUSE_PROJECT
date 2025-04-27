@@ -1,4 +1,4 @@
-#GLOBAL ELECTRONIC RETAILERS (SQL Data Warehouse Project)
+GLOBAL ELECTRONIC RETAILERS (SQL Data Warehouse Project)
 
 Designing and Building a Modern Data Warehouse with the Medallion Architecture Using SQL Server
 
@@ -9,12 +9,15 @@ SQL Server is used for storage and transformation, with Tableau available for op
 
 ✅ Project Scope and Requirements
 1️⃣ Data Engineering & Warehouse Design
-Goal: Build a structured, query-optimized data warehouse to support analytics and business KPIs.
+Goal:
+Build a structured, query-optimized data warehouse to support analytics and business KPIs.
 
 Data Sources:
+
 Raw retail datasets including Sales, Products, Customers, Stores, and Exchange Rates (CSV files).
 
 Architecture:
+
 Implementation of the Medallion Architecture:
 
 Bronze Layer – Raw ingested data
@@ -42,11 +45,13 @@ Data Dictionary
 Transformation Logic Documentation
 
 2️⃣ Business Analysis & Insights
-Goal: Translate raw data into meaningful business insights through SQL queries and optional dashboards.
+Goal:
+Translate raw data into meaningful business insights through SQL queries and optional dashboards.
 
 The business analysis is organized into four key areas:
 
 📊 1. Store Sales Performance Report
+
 Objective:
 Analyze store-level performance and revenue trends.
 
@@ -65,6 +70,7 @@ Store size vs total sales correlation
 Monthly sales trend analysis (Open Date vs Order Date)
 
 📊 2. Product Sales and Pricing Report
+
 Objective:
 Understand revenue drivers and pricing effectiveness.
 
@@ -81,6 +87,7 @@ Best-performing brands by order revenue
 Dead stock analysis (products with no sales)
 
 📊 3. Customer Purchase Behavior Report
+
 Objective:
 Analyze customer purchasing patterns to drive loyalty strategies.
 
@@ -103,6 +110,7 @@ Average products purchased per customer
 Sales distribution by gender (Male vs Female)
 
 📊 4. Currency and Exchange Rate Impact Report
+
 Objective:
 Evaluate the impact of currency fluctuations on international sales.
 
@@ -117,7 +125,6 @@ Comparison of sales in local currency vs USD
 Correlation between exchange rate trends and sales volume
 
 3️⃣ Tools & Technologies
-
 Tool	Purpose
 SQL Server	Data storage, transformation, and modeling
 SSMS	SQL querying and database management
