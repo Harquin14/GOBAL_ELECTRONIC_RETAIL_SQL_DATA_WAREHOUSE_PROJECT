@@ -51,3 +51,12 @@ LEFT JOIN Gold.fact_Sales s ON p.Product_Key = s.Product_Key
 GROUP BY p.Product_Name
 HAVING SUM(ISNULL(s.Sales_USD, 0)) = 0
 ORDER BY p.Product_Name;
+
+
+-- ================================================
+-- 🔍 Helper Queries: Explore Dimensional/Fact Tables
+-- ================================================
+SELECT * FROM Gold.dim_Stores;
+SELECT * FROM Gold.fact_Sales;
+SELECT * FROM Gold.dim_Products;
+SELECT * FROM Gold.dim_Customers;
