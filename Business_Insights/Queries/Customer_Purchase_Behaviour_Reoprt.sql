@@ -57,7 +57,7 @@ GROUP BY c.Customer_Key, c.Name
 ORDER BY Average_Quantity_Purchased DESC;
 
 -- ================================================
--- 🔍 Helper Queries: Explore Dimensional Tables
+-- 🔍 Helper Queries: Explore Dimensional/Fact Tables
 -- ================================================
 SELECT * FROM Gold.dim_Stores;
 SELECT * FROM Gold.fact_Sales;
