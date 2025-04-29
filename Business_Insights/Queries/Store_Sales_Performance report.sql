@@ -100,3 +100,12 @@ FROM Gold.fact_Sales s
 LEFT JOIN Gold.dim_Stores st ON s.Store_Key = st.Store_Key
 GROUP BY st.Store_Key, st.Open_Date, MONTH(s.Order_Date)
 ORDER BY SUM(s.Sales_USD) DESC;
+
+
+-- ================================================
+-- 🔍 Helper Queries: Explore Dimensional/Fact Tables
+-- ================================================
+SELECT * FROM Gold.dim_Stores;
+SELECT * FROM Gold.fact_Sales;
+SELECT * FROM Gold.dim_Products;
+SELECT * FROM Gold.dim_Customers;
