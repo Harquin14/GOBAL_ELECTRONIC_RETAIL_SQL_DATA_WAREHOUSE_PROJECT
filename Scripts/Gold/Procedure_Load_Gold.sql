@@ -47,8 +47,8 @@ SELECT
   ProductKey AS Product_Key,
   ProductName AS Product_Name,
   Color,
-  UnitCostUSD AS Unit_Cost_USD,
-  UnitPriceUSD AS Unit_Price_USD
+  CAST(UnitCostUSD AS DECIMAL(18,12)) Unit_Cost_USD,
+  CAST(UnitPriceUSD AS DECIMAL(18,2)) Unit_Price_USD
 FROM Silver.Products;
 SELECT * FROM Gold.dim_Products
 -- ========================================
@@ -64,7 +64,7 @@ WITH AverageUnitPrice AS (
   WHERE TRY_CAST(Unit_Price_USD AS DECIMAL(18,2)) IS NOT NULL
 )
 
--- Main query: fact table transformation
+-- Main query
 SELECT 
   ROW_NUMBER() OVER(ORDER BY OrderDate) AS Order_Number,
   OrderDate AS Order_Date,
@@ -74,23 +74,22 @@ SELECT
   s.ProductKey AS Product_Key,
   LineItem AS Line_Item,
 
-  -- If UnitPriceUSD is invalid, use the average price
-  FORMAT(COALESCE(
+  -- Use numeric data types, not formatted strings
+  CAST(COALESCE(
     TRY_CAST(TRIM(p.Unit_Price_USD) AS DECIMAL(18,2)),
     (SELECT AveragePrice FROM AverageUnitPrice)
-  ),'N2') AS Unit_Price_USD,
+  ) AS DECIMAL(18,2)) AS Unit_Price_USD,
 
   Quantity,
 
-  -- Compute total sales in USD and round to 2 decimal places
-  FORMAT(
+  -- Compute total sales in USD as a decimal
+  CAST(
     COALESCE(
       TRY_CAST(TRIM(p.Unit_Price_USD) AS DECIMAL(18,2)),
       (SELECT AveragePrice FROM AverageUnitPrice)
-    ) * s.Quantity, 
-  'N2') AS Sales_USD,
+    ) * s.Quantity 
+  AS DECIMAL(18,2)) AS Sales_USD,
 
-  -- Join with exchange rates to include currency metadata
   e.Currency_Key
 
 FROM Silver.Sales s
@@ -121,6 +120,5 @@ FROM Silver.Stores;
 
 -- Optional: test view output
 SELECT * FROM Gold.dim_Stores;
-
 
 
