@@ -47,8 +47,8 @@ SELECT
   ProductKey AS Product_Key,
   ProductName AS Product_Name,
   Color,
-  CAST(UnitCostUSD AS DECIMAL(18,12)) Unit_Cost_USD,
-  CAST(UnitPriceUSD AS DECIMAL(18,2)) Unit_Price_USD
+  UnitCostUSD AS Unit_Cost_USD,
+  UnitPriceUSD AS Unit_Price_USD
 FROM Silver.Products;
 SELECT * FROM Gold.dim_Products
 -- ========================================
