@@ -153,4 +153,5 @@ VS Code / SSMS – Development environment
 Simon Owusu Ansah
 Business Intelligence Analyst | Data Engineer | Tableau Specialist
 📍 Ghana
+
 [🔗 LinkedIn Profile] (https://www.linkedin.com/in/simon-owusu-ansah-76224421a/)
