@@ -20,7 +20,9 @@ Low-Value: < $10,000
 
 🔍 Average quantity of products purchased per customer
 
-📁 SQL File: sql/reports/customer_behavior_report.sql
+📁 Business_Insights File: Business_Insights/Queries/Customer_Purchase_Behaviour_Reoprt.sql
+
+
 
 🛍️ Product Sales and Pricing Report
 
@@ -36,7 +38,9 @@ Objective: Understand top-performing products, pricing patterns, and brand perfo
 
 🔍 Products with no sales (Dead Stock)
 
-📁 SQL File: sql/reports/product_sales_pricing_report.sql
+📁 Business_Insights File: Business_Insights/Queries/product_sales_pricing_report.sql
+
+
 
 📊 Store Sales Performance Report
 
@@ -54,7 +58,8 @@ Objective: Analyze store performance based on location, size, and sales trends.
 
 🔍 Monthly sales trend per store
 
-📁 SQL File: sql/reports/store_performance_report.sql
+📁 Business_Insights File: Business_Insights/Queries/store_performance_report.sql
+
 
 
 
@@ -78,7 +83,8 @@ Scatter Plot: Store size vs. sales
 
 Line Charts: Monthly trends
 
-📎 View Dashboard
+📎 View Dashboard: https://public.tableau.com/app/profile/simon.owusu.ansah/viz/GLOBALELECTRONICRETAILERS/PRODUCTSDASHBOARD
+
 
 
 📦 Dashboard B: Product Sales and Pricing
