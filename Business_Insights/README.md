@@ -1,7 +1,9 @@
 🧾 SQL Business Reports
+
 All insights were derived from the Gold Layer and answer specific business questions.
 
 👥 Customer Purchase Behavior Report
+
 Objective: Analyze customer acquisition, retention, and spending behavior.
 
 🔍 Number of new customers acquired each month
@@ -21,6 +23,7 @@ Low-Value: < $10,000
 📁 SQL File: sql/reports/customer_behavior_report.sql
 
 🛍️ Product Sales and Pricing Report
+
 Objective: Understand top-performing products, pricing patterns, and brand performance.
 
 🔍 Top 10 best-selling products by revenue
@@ -36,6 +39,7 @@ Objective: Understand top-performing products, pricing patterns, and brand perfo
 📁 SQL File: sql/reports/product_sales_pricing_report.sql
 
 📊 Store Sales Performance Report
+
 Objective: Analyze store performance based on location, size, and sales trends.
 
 🔍 Store with the highest total sales
