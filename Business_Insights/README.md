@@ -1,94 +1,146 @@
-🧠 Objective
+🧾 SQL Business Reports
+All insights were derived from the Gold Layer and answer specific business questions.
 
-This document outlines the key business questions derived from the Global Electronic Retailers dataset.
-Each section includes a set of insights generated using SQL queries against the Gold Layer of the data warehouse.
+👥 Customer Purchase Behavior Report
+Objective: Analyze customer acquisition, retention, and spending behavior.
 
-1️⃣ Store Sales Performance Analysis
-Objective:
+🔍 Number of new customers acquired each month
 
-Analyze revenue trends and operational performance at the store level.
+🔍 Total lifetime spend per customer
 
-Business Questions:
+🔍 Segment customers by total spend:
 
-  - Which store generated the highest total sales?
-  
-  - How many orders were placed per store?
-  
-  - What is the average revenue per order for each store?
-  
-  - Which country/state has the highest performing stores?
-  
-  - How does store size (in square meters) correlate with total sales?
-  
-  - What are the monthly sales trends by store (using Open Date and Order Date)?
+VIP: > $30,000
 
-2️⃣ Product Sales and Pricing Analysis
+Regular: $10,000 – $30,000
 
-Objective:
+Low-Value: < $10,000
 
-Evaluate product sales volume, revenue drivers, and pricing strategies.
+🔍 Average quantity of products purchased per customer
 
-Business Questions:
+📁 SQL File: sql/reports/customer_behavior_report.sql
 
-  - Which are the top 10 best-selling products (by total sales)?
-  
-  - What is the average selling price (UnitPriceUSD) by product category?
-  
-  - How many units were sold across different product subcategories?
-  
-  - Which brand achieved the highest average order revenue?
-  
-  - How many products are classified as dead stock (zero sales)?
+🛍️ Product Sales and Pricing Report
+Objective: Understand top-performing products, pricing patterns, and brand performance.
 
-3️⃣ Customer Purchase Behavior Analysis
+🔍 Top 10 best-selling products by revenue
 
-Objective:
+🔍 Average selling price by product category
 
-Understand customer purchasing patterns to support marketing and loyalty initiatives.
+🔍 Total quantity sold by subcategory
 
-Business Questions:
+🔍 Brands with highest average revenue per order
 
-  - How many new customers were acquired each month?
-  
-  - What is the total lifetime spend for each customer?
-  
-  - How can customers be segmented based on their lifetime spend?
-  
-    VIP Customers (> $5,000)
-  
-    Regular Customers ($1,000 - $5,000)
-  
-    Low-Value Customers (< $1,000)
-  
-  - What is the average quantity of products purchased per customer?
-  
-  - What is the gender distribution among customers, and how does it relate to total sales?
+🔍 Products with no sales (Dead Stock)
 
-4️⃣ Currency and Exchange Rate Impact Analysis
+📁 SQL File: sql/reports/product_sales_pricing_report.sql
 
-Objective:
+📊 Store Sales Performance Report
+Objective: Analyze store performance based on location, size, and sales trends.
 
-Assess the effect of international currencies and exchange rate fluctuations on sales.
+🔍 Store with the highest total sales
 
-Business Questions:
+🔍 Total number of orders per store
 
-  - Which currencies were most commonly used in sales transactions?
-  
-  - What were the average exchange rates over time?
-  
-  - How do sales in local currencies compare against sales in USD?
-  
-  - How do exchange rate trends impact monthly sales volume?
+🔍 Average revenue per order by store
 
-🚀 Approach
+🔍 Best-performing countries/states
 
-Queries are executed on the Gold Layer (aggregated tables).
+🔍 Impact of store size on sales
 
-SQL Server and SSMS are used for all analytical querying.
+🔍 Monthly sales trend per store
 
- visualizations are created using Tableau.
+📁 SQL File: sql/reports/store_performance_report.sql
 
-📂 Related Files
-/gold/ – Contains cleaned and aggregated datasets.
 
-Business_Insights/sql_queries/ – Contains SQL scripts answering each business question (structured by topic).
+
+📈 Tableau Dashboards
+
+Interactive Tableau dashboards were developed to visualize the results of SQL insights for stakeholders.
+
+📊 Dashboard A: Store Sales Performance
+
+Objective: Track store revenue trends and regional performance.
+
+Components:
+
+KPI Tiles: Total Sales, Orders, Avg Revenue per Order
+
+Bar Charts: Top stores by sales/orders
+
+Heat Maps: Sales by country/state
+
+Scatter Plot: Store size vs. sales
+
+Line Charts: Monthly trends
+
+📎 View Dashboard
+
+
+📦 Dashboard B: Product Sales and Pricing
+
+Objective: Identify top products and evaluate pricing strategies.
+
+Components:
+
+KPI Tiles: Sales, Avg Price, Quantity Sold
+
+Bar Charts: Top products by revenue
+
+Pie Charts: Category & subcategory distribution
+
+Line Charts: Price trends over time
+
+Tables: Dead Stock
+
+
+👥 Dashboard C: Customer Purchase Behavior
+
+Objective: Understand customer value and loyalty.
+
+Components:
+
+KPI Tiles: New Customers, Lifetime Spend, Avg Purchase
+
+Line Charts: Monthly customer growth
+
+Bar Charts: Spend-based segmentation
+
+Pie Charts: Gender distribution
+
+Tables: Top customers
+
+
+
+💱 Dashboard D: Currency and Exchange Rate Impact
+
+Objective: Examine how exchange rates influence international sales.
+
+Components:
+
+KPI Tiles: Sales in USD, Local Currency, Exchange Rate
+
+Line Charts: Exchange rate trends
+
+Bar Charts: Sales by currency
+
+Area Charts: USD vs Local Sales
+
+Tables: Currency usage and exchange rates
+
+
+🧰 Tools & Technologies
+
+SQL Server – Data warehouse and analytics
+
+Tableau Public – BI dashboards and visualization
+
+GitHub – Version control and project management
+
+VS Code / SSMS – Development environment
+
+👤 Author
+Simon Owusu Ansah
+Business Intelligence Analyst | Data Engineer | Tableau Specialist
+📍 Ghana
+[🔗 LinkedIn Profile] (https://www.linkedin.com/in/simon-owusu-ansah-76224421a/)
