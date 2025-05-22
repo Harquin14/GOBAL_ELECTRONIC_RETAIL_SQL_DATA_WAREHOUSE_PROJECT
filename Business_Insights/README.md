@@ -150,7 +150,9 @@ GitHub – Version control and project management
 VS Code / SSMS – Development environment
 
 👤 Author
+
 Simon Owusu Ansah
+
 Business Intelligence Analyst | Data Engineer | Tableau Specialist
 📍 Ghana
 
