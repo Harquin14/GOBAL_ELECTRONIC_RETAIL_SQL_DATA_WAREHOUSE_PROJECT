@@ -8,6 +8,7 @@ The project leverages the Medallion Architecture (Bronze, Silver, Gold layers) t
 SQL Server is used for storage and transformation, with Tableau available for optional dashboarding.
 
 ✅ Project Scope and Requirements
+
 1️⃣ Data Engineering & Warehouse Design
 Goal:
 Build a structured, query-optimized data warehouse to support analytics and business KPIs.
