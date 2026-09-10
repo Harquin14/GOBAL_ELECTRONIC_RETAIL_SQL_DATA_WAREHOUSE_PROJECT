@@ -1,9 +1,9 @@
 -- ================================================
--- 👥 Customer Purchase Behavior Report
+--  Customer Purchase Behavior Report
 -- Objective: Analyze customer acquisition, retention, and spending behavior
 -- ================================================
 
--- 🔍 1. Number of new customers acquired each month
+--  1. Number of new customers acquired each month
 WITH FirstPurchase AS (
     SELECT 
         c.Customer_Key,
@@ -20,7 +20,7 @@ FROM FirstPurchase
 GROUP BY FORMAT(First_Purchase_Date, 'yyyy-MM')
 ORDER BY Acquisition_Month;
 
--- 🔍 2. Total lifetime spend per customer
+--  2. Total lifetime spend per customer
 SELECT 
     c.Customer_Key,
     c.Name,
@@ -30,7 +30,7 @@ LEFT JOIN Gold.dim_Customers c ON s.Customer_Key = c.Customer_Key
 GROUP BY c.Customer_Key, c.Name
 ORDER BY SUM(s.Sales_USD) DESC;
 
--- 🔍 3. Segment customers by total spend
+--  3. Segment customers by total spend
 -- Segments: VIP (> $30,000), Regular ($10,000–$30,000), Low-Value (< $10,000)
 SELECT 
     c.Customer_Key,
@@ -46,7 +46,7 @@ LEFT JOIN Gold.dim_Customers c ON s.Customer_Key = c.Customer_Key
 GROUP BY c.Customer_Key, c.Name
 ORDER BY SUM(s.Sales_USD) DESC;
 
--- 🔍 4. Average quantity of products purchased per customer
+--  4. Average quantity of products purchased per customer
 SELECT 
     c.Customer_Key, 
     c.Name, 
@@ -57,7 +57,7 @@ GROUP BY c.Customer_Key, c.Name
 ORDER BY Average_Quantity_Purchased DESC;
 
 -- ================================================
--- 🔍 Helper Queries: Explore Dimensional/Fact Tables
+--  Helper Queries: Explore Dimensional/Fact Tables
 -- ================================================
 SELECT * FROM Gold.dim_Stores;
 SELECT * FROM Gold.fact_Sales;
