@@ -1,6 +1,7 @@
 GLOBAL ELECTRONIC RETAILERS (SQL Data Warehouse Project)
 
-![Uploading Medallion Data Achitecture 4 (1) (1).png…]()
+
+<img width="857" height="561" alt="Medallion Data Achitecture 4 (1) (1)" src="https://github.com/user-attachments/assets/1a2e4422-44bd-49ad-89f0-8a09adbd44e7" />
 
 
 Designing and Building a Modern Data Warehouse with the Medallion Architecture Using SQL Server
