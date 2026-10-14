@@ -1,5 +1,8 @@
 GLOBAL ELECTRONIC RETAILERS (SQL Data Warehouse Project)
 
+![Uploading Medallion Data Achitecture 4 (1) (1).png…]()
+
+
 Designing and Building a Modern Data Warehouse with the Medallion Architecture Using SQL Server
 
 📈 Project Objective
