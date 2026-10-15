@@ -8,15 +8,15 @@ Designing and Building a Modern Data Warehouse with the Medallion Architecture U
 
 
 📈 Project Objective
-Design and implement a scalable, high-performance data warehouse that consolidates, transforms, and analyzes multi-source retail data.
-The project leverages the Medallion Architecture (Bronze, Silver, Gold layers) to enable efficient ETL processes, ensure data quality, and support actionable insights for business decision-makers.
-SQL Server is used for storage and transformation, with Tableau available for optional dashboarding.
+Design and implement a scalable, high-performance data warehouse that consolidates, transforms, and analyses multi-source retail data.
+The project uses the Medallion Architecture (Bronze, Silver, Gold layers) to enable efficient ETL, ensure data quality, and support actionable insights for business decision-makers.
+SQL Server stores and transforms data, with Tableau available for optional dashboarding.
 
 ✅ Project Scope and Requirements
 
 1️⃣ Data Engineering & Warehouse Design
 Goal:
-Build a structured, query-optimized data warehouse to support analytics and business KPIs.
+Build a structured, query-optimised data warehouse to support analytics and business KPIs.
 
 Data Sources:
 
@@ -34,9 +34,9 @@ Implementation of the Medallion Architecture:
 
 ETL Process Includes:
 
-  -Data Cleaning (null handling, deduplication, data type standardization)
+  -Data Cleaning (null handling, deduplication, data type standardisation)
   
-  -Currency Standardization (conversion to USD)
+  -Currency Standardisation (conversion to USD)
   
   -Data Modeling (Star Schema with Fact and Dimension tables)
   
@@ -54,7 +54,7 @@ Deliverables:
 Goal:
 Translate raw data into meaningful business insights through SQL queries and optional dashboards.
 
-The business analysis is organized into four key areas:
+The business analysis is organised into four key areas:
 
 📊 1. Store Sales Performance Report
 
@@ -149,3 +149,6 @@ Tool	Purpose
   -CSV Files:	Simulated multi-source ERP/CRM data inputs
   
   -GitHub:	Version control and project documentation
+
+
+  Tableau Link: https://public.tableau.com/app/profile/simon.owusu.ansah/viz/GLOBALELECTRONICRETAILERS/PRODUCTSDASHBOARD
